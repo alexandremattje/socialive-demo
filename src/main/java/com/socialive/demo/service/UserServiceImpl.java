@@ -1,11 +1,11 @@
-package com.example.demo.service;
+package com.socialive.demo.service;
 
-import com.example.demo.contract.UserService;
-import com.example.demo.controller.dto.UserDto;
-import com.example.demo.exception.RecordAlreadyExistsException;
-import com.example.demo.exception.RecordNotFoundException;
-import com.example.demo.repository.UserRepository;
-import com.example.demo.repository.model.User;
+import com.socialive.demo.contract.UserService;
+import com.socialive.demo.controller.dto.UserDto;
+import com.socialive.demo.exception.RecordAlreadyExistsException;
+import com.socialive.demo.exception.RecordNotFoundException;
+import com.socialive.demo.repository.UserRepository;
+import com.socialive.demo.repository.model.User;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

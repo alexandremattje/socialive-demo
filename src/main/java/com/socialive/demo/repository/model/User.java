@@ -1,4 +1,4 @@
-package com.example.demo.repository.model;
+package com.socialive.demo.repository.model;
 
 import lombok.Data;
 

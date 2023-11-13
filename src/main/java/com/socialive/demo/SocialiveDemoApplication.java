@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.socialive.demo;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Bean;
 
 @EnableCaching
 @SpringBootApplication
-public class DemoApplication {
+public class SocialiveDemoApplication {
 
 	public static void main(String[] args) {
- 		SpringApplication.run(DemoApplication.class, args);
+ 		SpringApplication.run(SocialiveDemoApplication.class, args);
 	}
 
 	@Bean

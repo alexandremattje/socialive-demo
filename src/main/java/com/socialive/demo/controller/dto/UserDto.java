@@ -1,4 +1,4 @@
-package com.example.demo.controller.dto;
+package com.socialive.demo.controller.dto;
 
 import lombok.Data;
 

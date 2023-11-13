@@ -1,8 +1,8 @@
-package com.example.demo.controller;
+package com.socialive.demo.controller;
 
-import com.example.demo.contract.UserService;
-import com.example.demo.controller.dto.UserDto;
-import com.example.demo.exception.RecordAlreadyExistsException;
+import com.socialive.demo.contract.UserService;
+import com.socialive.demo.controller.dto.UserDto;
+import com.socialive.demo.exception.RecordAlreadyExistsException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;

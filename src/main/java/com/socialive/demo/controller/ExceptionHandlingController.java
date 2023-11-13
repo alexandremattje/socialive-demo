@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package com.socialive.demo.controller;
 
-import com.example.demo.exception.RecordAlreadyExistsException;
-import com.example.demo.exception.RecordNotFoundException;
+import com.socialive.demo.exception.RecordAlreadyExistsException;
+import com.socialive.demo.exception.RecordNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

@@ -1,8 +1,8 @@
-package com.example.demo.contract;
+package com.socialive.demo.contract;
 
-import com.example.demo.controller.dto.UserDto;
-import com.example.demo.exception.RecordAlreadyExistsException;
-import com.example.demo.exception.RecordNotFoundException;
+import com.socialive.demo.controller.dto.UserDto;
+import com.socialive.demo.exception.RecordAlreadyExistsException;
+import com.socialive.demo.exception.RecordNotFoundException;
 
 public interface UserService {
 
