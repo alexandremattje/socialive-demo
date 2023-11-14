@@ -30,13 +30,11 @@ public class UserController {
     }
 
     @PutMapping(consumes="application/json", produces = "application/json")
-    @CacheEvict(value = "email", key = "#user.email")
     public ResponseEntity<UserDto> updateUser(@RequestBody UserDto user) throws Throwable {
         return ResponseEntity.ok(this.userService.updateUser(user));
     }
 
     @DeleteMapping(path = "/{email}")
-    @CacheEvict(value = "email")
     public ResponseEntity<Boolean> deleteUser(@PathVariable String email) throws Throwable {
         this.userService.deleteUser(email);
         return ResponseEntity.ok(true);
