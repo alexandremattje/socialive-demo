@@ -8,6 +8,7 @@ import com.socialive.demo.repository.UserRepository;
 import com.socialive.demo.repository.model.User;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -44,6 +45,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @CacheEvict(value = "email", key = "#userDto.email")
     public UserDto updateUser(UserDto userDto) throws RecordNotFoundException {
         User user = this.repository.findByEmail(userDto.getEmail()).orElseThrow(RecordNotFoundException::new);
         user.setLastModified(new Date());
@@ -51,6 +53,7 @@ public class UserServiceImpl implements UserService {
         return this.mapper.map(this.repository.save(user), UserDto.class);    }
 
     @Override
+    @CacheEvict(value = "email")
     public void deleteUser(String email) throws RecordNotFoundException {
         this.repository.delete(this.repository.findByEmail(email).orElseThrow(RecordNotFoundException::new));
     }

@@ -4,7 +4,6 @@ import com.socialive.demo.contract.UserService;
 import com.socialive.demo.controller.dto.UserDto;
 import com.socialive.demo.exception.RecordAlreadyExistsException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.CacheControl;
 import org.springframework.http.ResponseEntity;
